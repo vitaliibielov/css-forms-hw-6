@@ -42,6 +42,10 @@ p {
   margin: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 .novisible {
   position: absolute;
   width: 1px;
@@ -654,12 +658,40 @@ nav {
   fill: currentColor;
 }
 
-/* .subscribe-label {
-  position: absolute;
-  left: 16px;
-  top: 15px;
-  bottom: 15px;
+/* MODAL WINDOW */
+
+.callorder {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.callorder-title {
+  margin-bottom: 12px;
+}
+
+/* .callform {
+ display: flex;
+ flex-direction: column;
 } */
+
+.callform-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.callform-field.callform-comment {
+  margin-bottom: 20px;
+}
+
+.callform-policy {
+  margin-bottom: 30px;
+}
+
+.callform-button {
+  display: block;
+}
 
 /* ----------------------------PORTFOLIO PAGE------------------------------ */
 /* FILTER */

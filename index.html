@@ -68,6 +68,40 @@
           <svg class="modal-icon" width="30" height="30" data-modal-close>
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
+
+          <div class="callorder">
+            <h2 class="callorder-title">
+              Залиште свої дані, ми вам передзвонимо
+            </h2>
+            <form action="" class="callform">
+              <div class="callform-field">
+                <label for="name">Ім'я</label>
+                <input type="text" name="name" id="name" />
+              </div>
+
+              <div class="callform-field">
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel" />
+              </div>
+
+              <div class="callform-field">
+                <label for="mail">Пошта</label>
+                <input type="email" name="mail" id="mail" />
+              </div>
+
+              <div class="callform-field callform-comment">
+                <label for="comment">Коментар</label>
+                <textarea name="comment" id="comment" rows="10"></textarea>
+              </div>
+              <div class="callform-policy">
+                <input type="checkbox" name="policy" id="policy" />
+                <label for="policy"
+                  >Погоджуюся з розсилкою та приймаю Умови договору</label
+                >
+              </div>
+              <button type="submit" class="callform-button">Відправити</button>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -466,7 +500,6 @@
                 class="subscribe-input"
                 placeholder="E-mail"
               />
-              <!-- <label for="mail" class="subscribe-label">E-mail</label> -->
               <button type="submit" class="subscribe-button">
                 Підписатися<svg
                   class="subscribe-button-icon"

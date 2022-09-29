@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -65,7 +69,7 @@
       <!-- MODAL WINDOW -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <svg class="modal-icon" width="30" height="30" data-modal-close>
+          <svg class="modal-icon" width="18" height="18" data-modal-close>
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
 
@@ -74,29 +78,72 @@
               Залиште свої дані, ми вам передзвонимо
             </h2>
             <form action="" class="callform">
-              <div class="callform-field">
-                <label for="name">Ім'я</label>
-                <input type="text" name="name" id="name" />
+              <div class="callform-block">
+                <label for="name" class="callform-label">Ім'я</label>
+                <span class="callform-field">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="callform-input"
+                  />
+                  <svg class="callform-icon" width="18" height="18">
+                    <use href="./img/icons.svg#icon-user"></use>
+                  </svg>
+                </span>
               </div>
 
-              <div class="callform-field">
-                <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" />
+              <div class="callform-block">
+                <label for="tel" class="callform-label">Телефон</label>
+                <span class="callform-field">
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    class="callform-input"
+                  />
+                  <svg class="callform-icon" width="18" height="18">
+                    <use href="./img/icons.svg#icon-call"></use>
+                  </svg>
+                </span>
               </div>
 
-              <div class="callform-field">
-                <label for="mail">Пошта</label>
-                <input type="email" name="mail" id="mail" />
+              <div class="callform-block">
+                <label for="mail" class="callform-label">Пошта</label>
+                <span class="callform-field">
+                  <input
+                    type="email"
+                    name="mail"
+                    id="mail"
+                    class="callform-input"
+                  />
+                  <svg class="callform-icon" width="18" height="18">
+                    <use href="./img/icons.svg#icon-email"></use>
+                  </svg>
+                </span>
               </div>
-
               <div class="callform-field callform-comment">
-                <label for="comment">Коментар</label>
-                <textarea name="comment" id="comment" rows="10"></textarea>
+                <label for="comment" class="callform-label">Коментар</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  rows="10"
+                  placeholder="Введіть текст"
+                  class="callform-commentinput"
+                ></textarea>
               </div>
               <div class="callform-policy">
-                <input type="checkbox" name="policy" id="policy" />
-                <label for="policy"
-                  >Погоджуюся з розсилкою та приймаю Умови договору</label
+                <label for="policy" class="callform-agreement"
+                  ><input
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                    class="callform-checkbox"
+                  />
+                  <svg class="agreement-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-check"></use></svg
+                  >Погоджуюся з розсилкою та приймаю
+                  <a href="" class="agreement-pop">Умови договору</a></label
                 >
               </div>
               <button type="submit" class="callform-button">Відправити</button>
@@ -500,7 +547,7 @@
                 class="subscribe-input"
                 placeholder="E-mail"
               />
-              <button type="submit" class="subscribe-button">
+              <button type="submit" class="subscribe-button animate__pulse">
                 Підписатися<svg
                   class="subscribe-button-icon"
                   width="24"
